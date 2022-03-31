@@ -144,20 +144,19 @@ body {
 .user-subject {
   margin-bottom: 0;
 }
-
-input {
+input,
+textarea {
   font-size: 14px;
   font-weight: 700;
   color: var(--placeholder-color-text);
   text-transform: uppercase;
+}
+input {
   min-height: 52px;
   width: 458px;
   border: 1px solid var(--border-color);
   margin-bottom: 28px;
   border-radius: 2px;
-}
-input:focus {
-  outline: none;
 }
 
 input::placeholder,
@@ -194,9 +193,10 @@ textarea {
   padding: 24px 46px 24px 46px;
   border-radius: 2px;
 }
+
 input:valid,
 textarea:valid {
-  outline: 1px solid var(--valid-color);
+  outline: 5px solid green;
 }
 input:invalid,
 textarea:invalid {
