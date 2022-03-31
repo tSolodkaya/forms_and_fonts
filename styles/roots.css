@@ -1,0 +1,15 @@
+@import url("../styles/fonts/Roboto");
+@import url("../styles/fonts/Montserrat");
+@import url("../styles/fonts/Lobster");
+
+:root {
+  --main-color-text: #222222;
+  --second-color-text: #777777;
+  --color-theme: #fed136;
+  --light-color-text: #ffffff;
+  --placeholder-color-text: #bbbbbb;
+  --border-color: #cccccc;
+  --montserat-font: Montserat, sans-serif;
+  --roboto-font: Roboto, sans-serif;
+  --lobster-font: Lobster, sans-serif;
+}
