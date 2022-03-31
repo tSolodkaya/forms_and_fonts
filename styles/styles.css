@@ -1,4 +1,5 @@
 @import url("fonts.css");
+
 html {
   box-sizing: border-box;
 }
@@ -7,19 +8,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
-.visualy-hidden:not(:focus):not(:active),
-input[type="checkbox"].visualy-hidden,
-input[type="radio"].visualy-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+body {
+  font-family: var(--montserat-font);
+  font-style: normal;
 }
 .site-header {
   min-height: 28px;
@@ -30,8 +21,7 @@ input[type="radio"].visualy-hidden {
 }
 .site-logo a {
   display: block;
-  font-family: "Lobster";
-  font-style: normal;
+  font-family: var(--lobster-font);
   font-weight: 400;
   text-decoration: none;
   color: var(--color-theme);
@@ -57,8 +47,6 @@ input[type="radio"].visualy-hidden {
 .site-navigation-item a {
   display: block;
   text-decoration: none;
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--main-color-text);
@@ -69,17 +57,14 @@ input[type="radio"].visualy-hidden {
 }
 .section-header {
   margin: 0 0 19px 0;
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
-
   text-transform: uppercase;
   text-align: center;
 }
 .section-description {
   margin: 0 0 80px 0;
-  font-family: "Lobster";
+  font-family: var(--lobster-font);
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -119,28 +104,25 @@ input[type="radio"].visualy-hidden {
   background-position: center;
 }
 .ecomerce-icon::before {
-  background-image: url(../styles/images/icons/Icon-Basket.png);
+  background-image: url(images/icons/Icon-Basket.png);
 }
 .responsive-icon::before {
-  background-image: url(../styles/images/icons/Icon-Laptop.png);
+  background-image: url(images/icons/Icon-Laptop.png);
 }
 .security-icon::before {
-  background-image: url(../styles/images/icons/Icon-Locked.png);
+  background-image: url(images/icons/Icon-Locked.png);
 }
 .services-menu-item-header {
   margin: 0 0 16px 0;
-  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 700;
-  font-style: normal;
   color: var(--main-color-text);
 }
 .services-menu-item-description {
   margin: 0;
-  font-family: "Roboto";
+  font-family: var(--roboto-font);
   font-size: 14px;
   font-weight: 400;
-  font-style: normal;
   color: var(--second-color-text);
 }
 .services-section {
@@ -150,7 +132,7 @@ input[type="radio"].visualy-hidden {
   width: 1430px;
   margin: 0 auto;
   background-color: var(--main-color-text);
-  background-image: url("../styles/images/MapImage.png");
+  background-image: url("images/MapImage.png");
   background-repeat: no-repeat;
   background-position: right;
   padding-bottom: 115px;
@@ -162,11 +144,10 @@ input[type="radio"].visualy-hidden {
 .user-subject {
   margin-bottom: 0;
 }
+
 input {
-  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
-  font-style: normal;
   color: var(--placeholder-color-text);
   text-transform: uppercase;
   min-height: 52px;
@@ -178,14 +159,13 @@ input {
 input:focus {
   outline: none;
 }
+
 input::placeholder,
 textarea::placeholder {
   padding-left: 20px;
   text-transform: uppercase;
-  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
-  font-style: normal;
   color: var(--placeholder-color-text);
 }
 textarea::placeholder {
@@ -203,28 +183,22 @@ textarea {
 .submit-btn {
   display: block;
   margin: 0 auto;
-  border: none;
   padding: 0;
   cursor: pointer;
+  border: none;
   background-color: var(--color-theme);
-  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 700;
-  font-style: normal;
   color: var(--light-color-text);
   text-transform: uppercase;
   padding: 24px 46px 24px 46px;
   border-radius: 2px;
 }
-.user-name:valid,
-.user-email:valid,
-.user-subject:valid,
+input:valid,
 textarea:valid {
-  outline: 1px solid green;
+  outline: 1px solid var(--valid-color);
 }
-.user-name:invalid,
-.user-email:invalid,
-.user-subject:invalid,
+input:invalid,
 textarea:invalid {
-  outline: 2px solid red;
+  outline: 2px solid var(--invalid-color);
 }

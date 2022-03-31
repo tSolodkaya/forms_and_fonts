@@ -12,4 +12,6 @@
   --montserat-font: Montserat, sans-serif;
   --roboto-font: Roboto, sans-serif;
   --lobster-font: Lobster, sans-serif;
+  --invalid-color: #ff0000;
+  --valid-color: #008000;
 }
